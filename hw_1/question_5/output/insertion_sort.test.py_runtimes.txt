@@ -1,0 +1,40 @@
+Uniform Test
+n = 100
+Successful: True
+Time elapsed: 0.000192 seconds
+
+Uniform Test
+n = 1000
+Successful: True
+Time elapsed: 0.020990 seconds
+
+Uniform Test
+n = 10000
+Successful: True
+Time elapsed: 2.338534 seconds
+
+Uniform Test
+n = 100000
+Successful: True
+Time elapsed: 236.785105 seconds
+
+Gaussian Test
+n = 100
+Successful: True
+Time elapsed: 0.000183 seconds
+
+Gaussian Test
+n = 1000
+Successful: True
+Time elapsed: 0.021243 seconds
+
+Gaussian Test
+n = 10000
+Successful: True
+Time elapsed: 2.365850 seconds
+
+Gaussian Test
+n = 100000
+Successful: True
+Time elapsed: 239.224760 seconds
+

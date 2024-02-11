@@ -1,3 +1,5 @@
+__author__="Andrew Serra"
+
 import random
 
 NUM_TEST_CASES = [100, 1000, 10000, 100000]

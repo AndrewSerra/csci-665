@@ -1,10 +1,12 @@
+__author__="Andrew Serra"
+
 import time
-from data_generator import create_uniform_test_cases, create_gaussian_test_cases
-from sort_verifier import is_sorted
+from utils.data_generator import create_uniform_test_cases, create_gaussian_test_cases
+from utils.sort_verifier import is_sorted
 from merge_sort import merge_sort
 
 
-def print_test_info(length: int, data_dist: str):
+def print_test_info(length, data_dist):
     print(f"{data_dist.capitalize()} Test")
     print(f"n = {length}")
 

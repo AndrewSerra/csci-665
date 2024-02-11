@@ -1,15 +1,17 @@
+__author__="Andrew Serra"
+
 import time
-from data_generator import create_uniform_test_cases, create_gaussian_test_cases
-from sort_verifier import is_sorted
-from insertion_sort import insertion_sort
+from utils.data_generator import create_uniform_test_cases, create_gaussian_test_cases
+from utils.sort_verifier import is_sorted
+from bucket_sort import bucket_sort
 
 
-def print_test_info(length: int, data_dist: str):
+def print_test_info(length, data_dist):
     print(f"{data_dist.capitalize()} Test")
     print(f"n = {length}")
 
 
-def merge_sort_test():
+def bucket_sort_test():
     uniform_data = create_uniform_test_cases()
     gaussian_data = create_gaussian_test_cases()
 
@@ -17,7 +19,7 @@ def merge_sort_test():
         print_test_info(len(test_case), "uniform")
         
         t_start = time.time()
-        sorted_tc = insertion_sort(test_case)
+        sorted_tc = bucket_sort(test_case)
         elapsed = time.time() - t_start
         
         print(f"Successful: {is_sorted(sorted_tc)}")
@@ -27,7 +29,7 @@ def merge_sort_test():
         print_test_info(len(test_case), "gaussian")
 
         t_start = time.time()
-        sorted_tc = insertion_sort(test_case)
+        sorted_tc = bucket_sort(test_case)
         elapsed = time.time() - t_start
         
         print(f"Successful: {is_sorted(sorted_tc)}")
@@ -35,4 +37,4 @@ def merge_sort_test():
 
 
 if __name__ == "__main__":
-    merge_sort_test()
+    bucket_sort_test()

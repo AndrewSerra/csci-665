@@ -1,7 +1,7 @@
-import random
+__author__="Andrew Serra"
+
 import math
 from typing import Any
-from sort_verifier import is_sorted
 from insertion_sort import insertion_sort
 
 

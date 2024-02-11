@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+__author__="Andrew Serra"
+
 from typing import Any
 
 def _split_arr(arr: list[Any]) -> tuple[list[Any]]:
